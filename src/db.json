@@ -1,0 +1,52 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "name": "Goat Yoga",
+      "description": "Relax and tone your body through yoga while baby goats give you an endorphin dump",
+      "price": "30",
+      "time": "9:00am",
+      "picture": "/media/GoatYoga.jpeg"
+    },
+    {
+      "id": "2",
+      "name": "Goat Book Club",
+      "description": "Read some fantastic literature and whenever you get bored just pet some baby goats for a minute!",
+      "price": "25",
+      "time": "3:00pm",
+      "picture": "/media/GoatBookClub.jpeg"
+    },
+    {
+      "id": "3",
+      "name": "Goat Games",
+      "description": "Challenge your friends to some competive video games and bored games. Do you ever really lose when a baby goat is in your lap?",
+      "price": "25",
+      "time": "7:00pm",
+      "picture": "/media/GoatGames.jpeg"
+    },
+    {
+      "id": "4",
+      "name": "Goat Jitsu",
+      "description": "The playing field is leveled between black belts and white belts when everyone starts laughing at baby goats.",
+      "price": "30",
+      "time": "12:00pm",
+      "picture": "/media/GoatJitsu.jpeg"
+    },
+    {
+      "id": "5",
+      "name": "Goat Choir",
+      "description": "Harmonize with the best of them and a group of well trained baby goats.",
+      "price": "30",
+      "time": "5:00pm",
+      "picture": "/media/GoatChoir.jpeg"
+    },
+    {
+      "id": "b25c",
+      "name": "Goat Jitsu advanced",
+      "description": "More BJJ with more goats!",
+      "price": "35",
+      "time": "8:00pm",
+      "picture": "/media/GoatJitsu1.jpeg"
+    }
+  ]
+}

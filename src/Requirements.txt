@@ -1,0 +1,91 @@
+In this final project, you are tasked with creating a React application that acts as a portal for a Shop owner to display and manage items for sale. Imagine you are creating this application for a fictional company that wants to create an online storefront for their inventory.
+
+Part 1: Data Model
+The first step is to plan out the data model for items in the Shop. Each item must include the following:
+
+Id
+Name
+An image URL
+A price
+At least 2 other properties
+For example, a model for an item in a coffee shop might look as follows:
+
+id: number
+itemName: string
+description: string
+dairyFree: boolean
+price: number
+imageUrl: string
+Note: For the image URLs, you can use URLs from online, or save the images to your project and include local URL paths (like src/images/cat-photo.jpg)
+
+You can use static data or use faker to generate mock data.
+
+Once you have designed your data model, create a json-server with at least three mock items.
+
+Part 2: Base Application
+Create a home page that can be navigated through /home or the default URL /.
+
+The home component contains a header with the company name and logo (you can use an icon or a fake logo from the internet)
+The home component also displays some of the items sold by the company (limit the list to 3 items)
+Create an about page that can be navigated to via /about which contains a paragraph of text (use placeholder text) and an image (use Unsplash or other stock photo sites) side by side.
+
+Tip: There are many fun lorem ipsum text generators you can use to create placeholder text: Lorem Ipsum Generators
+
+Create a products component that can be accessed through /products and contains the list of all items sold in a card-like layout.
+
+each list item displays an image, title, and price
+each list item includes a button or link that will navigate to a detailed view, a button to edit the listing, and a button for deleting the listing.
+add a button at the top of the page that will navigate to a component where users can create new products
+Create a navigation menu or toolbar with "/home", "/about" and "/products" routes.
+
+Part 3: Product CRUD Components
+Create a Context/Provider within your project that will facilitate CRUD operations needed to Create, View, Edit, and Delete products.
+
+Create a component that provides a detailed view for the products (accessible via products/:id)
+
+The page should contain all the information as defined in the item model in a single view
+The page should be accessible by clicking on the item from the Product list page
+Create a component that can be used to add new products that is accessible via /add.
+
+Navigate to this page when the user clicks the Create/Add button from the Product list page
+The page should contain a form that allows the user to enter information to add a product to the mock server
+Once a product is added successfully, automatically redirect the user to the /products page
+Create a product edit component that is accessible via /edit/:id
+
+The page should allow the user to update the information for an individual product
+The page should be accessed when clicking the "edit" button for a product on the Product list page
+Once a product has been updated, redirect the user to the Product list page.
+Implement the functionality needed to delete a product when the "delete" button is clicked on the Product list page. When the item is deleted, the item should be removed from the mock server and from the page.
+
+Part 4: Advanced Product Features
+The following JSON-Server queries can be used to create advanced list operations on the Product list page. Choose at least ONE of the following features and implement it within your application:
+
+Implement a search feature for a keyword entered by a user which uses the "Full-text search" route from json-server.
+
+You can add the search bar to the application's nav bar, to the product list page, or to a new component.
+The search results can be populated on a component of its own, or within the existing product list page.
+JSON-Server Full-Text Search
+Implement a sort feature on the main product list page that will sort the items using the "sort" route from json-sever.
+
+Allow the user to toggle how the items are sorted (this could be done, for example, with buttons or a dropdown). You can either have the sort toggle between ascending/descending, or you can toggle between sorting by name and sorting by price.
+You can choose whether the initial page load sorts items, or if the items remain unsorted until the user clicks a button.
+JSON-Server Sort
+Implement a filter feature on the Product list page for the price field to allow users to find items for three different price ranges.
+
+For example, 0 to0to10, 10 to10to20, $20 or more
+Provide a way to select a price range. For example, you might use radio buttons or a dropdown
+The initial page load should display all items without a filter
+Use the _gte and _lte operators within json-server
+JSON-Server Operators.
+Hint: If you need to use more than one filter/operation on a query, you can combine them using &. E.g., to search a list of Coffee for "latte" and to sort the results by "name", you can use /coffee?q=latte&_sort=name
+
+Part 5: Styling
+Make the project your own by customizing the look and feel of the website.
+
+Create a footer with the company name and your name as the designer.
+
+Use CSS and React Bootstrap Components to style the application with a unified design.
+
+Tip: Coolers and Paletton are nice color scheme designers you can use if you need help picking colors that work together.
+
+Tip: Use Google Fonts to make your website even more unique.
